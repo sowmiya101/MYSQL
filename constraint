@@ -7,3 +7,6 @@ INSERT INTO transactions (amount, customer_id)
 VALUES ( 5.87, 1),
 	(6.75, 2);
 SELECT * FROM transactions;
+
+DELETE FROM customers
+WHERE customer_id = 2;
