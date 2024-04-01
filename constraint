@@ -1,3 +1,9 @@
 ALTER TABLE transactions
 ADD CONSTRAINT fk_customer_id
 FOREIGN KEY (customer_id) REFERENCES customers(customer_id);
+
+
+INSERT INTO transactions (amount, customer_id)
+VALUES ( 5.87, 1),
+	(6.75, 2);
+SELECT * FROM transactions;
