@@ -1,0 +1,23 @@
+SELECT COUNT(amount)
+FROM transactions;
+
+SELECT COUNT(amount) AS "today transactions"
+FROM transactions;
+
+SELECT max(amount) AS maximum
+FROM transactions;
+
+SELECT min(amount) AS minimum
+FROM transactions;
+
+SELECT avg(amount) AS average
+FROM transactions;
+
+SELECT sum(amount) AS sum
+FROM transactions;
+
+SELECT CONCAT(first_name, last_name) AS full_name
+FROM employees;
+
+SELECT CONCAT(first_name," ",last_name) AS full_name
+FROM employees;
