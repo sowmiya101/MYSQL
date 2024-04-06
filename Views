@@ -1,0 +1,28 @@
+CREATE VIEW employee_attendance AS
+SELECT first_name, last_name
+FROM employees;
+
+SELECT * FROM employee_attendance
+ORDER BY last_name ASC;
+
+DROP VIEW employee_attendance;
+
+ALTER TABLE customers
+ADD COLUMN email VARCHAR(50);
+SELECT * FROM customers;
+
+UPDATE customers
+SET email = "ramya@gmail.com"
+WHERE customer_id = 1;
+SELECT * FROM customers;
+
+UPDATE customers
+SET email = "sowmi@gmail.com"
+WHERE customer_id = 2;
+SELECT * FROM customers;
+
+CREATE VIEW customer_email AS
+SELECT email
+FROM customers;
+
+SELECT * FROM customer_email;
